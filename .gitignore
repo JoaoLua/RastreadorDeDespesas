@@ -1,0 +1,22 @@
+# 1. Criar/Sobrescrever o .gitignore na raiz
+cat <<EOF > .gitignore
+# --- Ignorar arquivos do Sistema ---
+.DS_Store
+Thumbs.db
+
+# --- Ignorar Backend (.NET / Visual Studio) ---
+.vs/
+bin/
+obj/
+*.user
+[Dd]ebug/
+[Rr]elease/
+*.suo
+
+# --- Ignorar Frontend (Node / Angular / React) ---
+node_modules/
+dist/
+.angular/
+package-lock.json
+yarn.lock
+EOF
